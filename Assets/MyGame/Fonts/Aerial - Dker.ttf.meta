@@ -8,11 +8,10 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: aerial
   fontNames:
   - aerial
   fallbackFontReferences: []
-  customCharacters: 
+  customCharacters: _
   fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
