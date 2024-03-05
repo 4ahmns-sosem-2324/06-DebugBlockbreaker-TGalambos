@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Paddle : MonoBehaviour {
+public class Paddle : MonoBehaviour 
+{
 
     //configruation parameters
     public float minX = 1f;
@@ -28,7 +29,7 @@ public class Paddle : MonoBehaviour {
         transform.position = paddlePos;
 	}
 
-    private float GetXPosition
+    private float GetXPosition()
     {
         if (theGameSession.IsAutoPlayEnabled())
         {
