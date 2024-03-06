@@ -10,8 +10,7 @@ classDiagram
     MonoBehaviour <|-- Paddle
     MonoBehaviour <|-- SceneManager
 
-    class Ball
-    {
+    class Ball{
         + Paddle paddle1
         + float xPush = 2f
         + float yPush = 15f
@@ -31,8 +30,7 @@ classDiagram
         - void OnCollisionEnter2D(Collision2D collision)
     }
     
-    class Block
-    {
+    class Block{
         - const string BREAKABLE = "Breakable"
         - const string UNBREAKABLE = "UnBreakable"
     
@@ -54,8 +52,7 @@ classDiagram
         - void TriggerSparkleVFX()
     }
     
-    class GameSession
-    {
+    class GameSession{
         [Range(0.1f, 10f)] + float gameSpeed = 1f
         + int pointsPerBlockDestroyed = 83
         + TextMeshProUGUI scoreText
@@ -69,8 +66,7 @@ classDiagram
         + void ResetGame()
         + bool IsAutoPlayEnabled()
     }
-    class Level
-    {
+    class Level{
         - [SerializeField] int breakableBlocks
     
         - SceneLoader sceneLoader
@@ -81,8 +77,7 @@ classDiagram
         - void LoadEndScreen()
     }
     
-    class LoseCollider
-    {
+    class LoseCollider{
         + GameObject loader
         - SceneLoader sceneLoader
     
@@ -90,8 +85,7 @@ classDiagram
        - void OnTriggerEnter2D (Collider2D collision)
     }
     
-    class Paddle 
-    {
+    class Paddle{
         + float minX = 1f
         + float maxX = 15f
         + float screenWidthInUnits = 16f
@@ -102,10 +96,9 @@ classDiagram
     	- void Start ()
     	- void Update ()
       - float GetXPosition()
-        
     }
-    class SceneLoader
-    {
+
+    class SceneLoader{
         - const string GAMEOVERSCREEN = "GameOver"
         - const string CONGRATSSCREEN = "Congrats"
         - const string LEVEL5 = "Level5"
